@@ -1,0 +1,78 @@
+<div class="container" style="padding: 100px">
+    <h2>Demo</h2>
+
+    <popover #myPopover>
+        A popover is a light roll made from an egg batter similar to that of Yorkshire pudding.
+    </popover>
+
+    <p>
+        <button [popoverTriggerFor]="myPopover" placement="top">Top</button>
+        <button [popoverTriggerFor]="myPopover" placement="right">Right</button>
+        <button [popoverTriggerFor]="myPopover" placement="bottom">Bottom</button>
+        <button [popoverTriggerFor]="myPopover" placement="left">Left</button>
+    </p>
+
+    <p>
+        <button [popoverTriggerFor]="myPopover" width="200px">Width 200px</button>
+        <button [popoverTriggerFor]="myPopover" height="100px">Height 100px</button>
+    </p>
+
+    <p>
+        <button [popoverTriggerFor]="myPopover" theme="dark">Dark theme</button>
+    </p>
+    
+    <p>
+        <button [popoverTriggerFor]="myPopover" [zIndex]="1000">z-index 1000</button>
+    </p>
+
+    <p>
+        <button [popoverTriggerFor]="myPopover" [offset]="0">Offset 0</button>
+    </p>
+
+    <p>
+        <button [popoverTriggerFor]="myPopover" animation="fade">"fade" animation</button>
+    </p>
+
+    <p>
+        <button [popoverTriggerFor]="myPopover" [animationDuration]="300">Animation duration 300ms</button>
+    </p>
+
+    <p>
+        <button [popoverTriggerFor]="myPopover" animationTimingFunction="ease">Animation timing function "ease"</button>
+    </p>
+
+    <p>
+        <button [popoverTriggerFor]="myPopover" popoverClass="my-class">Custom class</button>
+    </p>
+
+    <p>
+        <button [popoverTriggerFor]="myPopover" padding="8px">Padding 8px</button>
+    </p>
+
+    <p>
+        <button [popoverTriggerFor]="myPopover" [noArrow]="true">No arrow</button>
+    </p>
+
+    <p>
+        <button [popoverTriggerFor]="myPopover" whiteSpace="nowrap" maxWidth="none">White space "nowrap"</button>
+    </p>
+
+    <p>
+        <button [popoverTriggerFor]="myPopover" shadow="0 3px 12px rgba(27, 31, 35, 0.15)">Shadow</button>
+    </p>
+
+    <p>
+        <button [popoverTriggerFor]="myPopover" fontSize="18px">Font size 18px</button>
+    </p>
+
+    <p>
+        <button [popoverTriggerFor]="myPopover" pointerEvents="none">Pointer events "none"</button>
+    </p>
+
+    <p>
+        <button [popoverTriggerFor]="myPopover" [display]="false">Display false</button>
+    </p>
+</div>
+
+
+<router-outlet></router-outlet>
